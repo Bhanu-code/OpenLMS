@@ -1,5 +1,5 @@
 
-# db-drawer 
+# OpenLMS 
 
 <br>
 <br>
@@ -39,14 +39,6 @@ Teacher will be able to take exams, online classes, attch assignments, provide s
 
 Institutes can manage their faculty, student progress without being bounded in-person.
 
-# <a name="2 Project Architechure">Project Architechure:</a>
-
-Project Architechure
-
-![WhatsApp Image 2024-05-18 at 00 20 55](https://github.com/suhanipaliwal/db-drawer/assets/161575955/d6854ec8-fa70-4e82-96ab-6ad278b4f258)
-
-
-Dataset can be downloaded from the mentioned below link:
 # <a name="2 Tech Stacks">Tech Stacks:</a>
 
 To be able to contribute to this project following technolgies you should learn,
