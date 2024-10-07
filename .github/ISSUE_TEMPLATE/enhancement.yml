@@ -1,0 +1,19 @@
+name: ✨ Enhancement Tracking Issue
+description: Provide supporting details for a feature in development
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: What would you like to be added?
+      description: |
+        Suggest code, documentation or any improvemnets you think will be good.
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why is this needed?
+    validations:
+      required: true
