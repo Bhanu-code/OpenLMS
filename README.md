@@ -60,11 +60,11 @@ OpenLMS is an open-source learning management system (LMS) built using **Next.js
 ##  🖼Web Screens
 
 1. Login Screen:
-<img src="https://github.com/Bhanu-code/OpenLMS/Design/Login.png"/>
+<img src="https://github.com/Reboot2004/OpenLMS/blob/Figma-Design/Design/Login.png"/>
 
 
 2. Signup Screen:
-<img src="https://github.com/Bhanu-code/OpenLMS/Design/Register.png"/>
+<img src="https://github.com/Reboot2004/OpenLMS/blob/Figma-Design/Design/Register.png"/>
 
 
 
