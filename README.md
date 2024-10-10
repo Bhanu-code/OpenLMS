@@ -60,11 +60,11 @@ OpenLMS is an open-source learning management system (LMS) built using **Next.js
 ##  🖼Web Screens
 
 1. Login Screen:
-<iframe style="border: none;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/your-file-link"></iframe>
+<img src="https://github.com/Bhanu-code/OpenLMS/Design/Login.png"/>
 
 
 2. Signup Screen:
-<img src="https://github.com/Bhanu-code/OpenLMS/blob/main/screenshots/>
+<img src="https://github.com/Bhanu-code/OpenLMS/Design/Register.png"/>
 
 
 
@@ -99,7 +99,7 @@ npm start
 
  ## 🛠️ Contributing Guide
 
-We welcome contributions to the **videocall webapp** project! To contribute:
+We welcome contributions to the **OpenLMS** project! To contribute:
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature-name`)
 3. Commit your changes (`git commit -am 'Add new feature'`)
