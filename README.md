@@ -21,21 +21,22 @@
 1. [Introduction](#introduction)
 2. [Tech Stack](#tech-stack)
 3. [Features](#features)
-4. [Installation Guide](#installation-guide)
-5. [Contributing Guide](#contributing-guide)
-6. [Outreach](#outreach)
-7. [Project Admin](#project-admin)
-8. [Code of Conduct](#code-of-conduct)
-9. [Learn More](#learn-more)
-10. [Deploy on Vercel](#deploy-on-vercel)
-11. [License](#license)
-12. [Support](#support)
-13. [Contributors](#contributors)
+4. [Web Screens](#screens)
+5. [Installation Guide](#installation-guide)
+6. [Contributing Guide](#contributing-guide)
+7. [Outreach](#outreach)
+8. [Project Admin](#project-admin)
+9. [Code of Conduct](#code-of-conduct)
+10. [Learn More](#learn-more)
+11. [Deploy on Vercel](#deploy-on-vercel)
+12. [License](#license)
+13. [Support](#support)
+14. [Contributors](#contributors)
+15. [Design Links](#design)
 
 ## ✨🎈Introduction
 
 OpenLMS is an open-source learning management system (LMS) built using **Next.js**, a popular React framework. It provides institutions with a comprehensive platform to manage online learning activities effectively. With features like course creation, video conferencing, discussion forums, and file sharing, OpenLMS aims to be a user-friendly and scalable solution for educational institutions.
-
 
 ## ⌨️Tech Stack
 
@@ -55,6 +56,17 @@ OpenLMS is an open-source learning management system (LMS) built using **Next.js
 - File sharing for submitting assignments and sharing resources.
 - Customizable to suit the needs of different institutions.
 - Scalable to support institutions of all sizes.
+
+##  🖼Web Screens
+
+1. Login Screen:
+<img src="https://github.com/Reboot2004/OpenLMS/blob/Figma-Design/Design/Login.png"/>
+
+
+2. Signup Screen:
+<img src="https://github.com/Reboot2004/OpenLMS/blob/Figma-Design/Design/Register.png"/>
+
+
 
   ## 🧑🏻‍💻Installation Guide 
 
@@ -87,7 +99,7 @@ npm start
 
  ## 🛠️ Contributing Guide
 
-We welcome contributions to the **videocall webapp** project! To contribute:
+We welcome contributions to the **OpenLMS** project! To contribute:
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature-name`)
 3. Commit your changes (`git commit -am 'Add new feature'`)
@@ -182,5 +194,5 @@ Gityzer is licensed under the terms of the MIT License. check out <a href="./LIC
 
 <p align="right">(<a href="#top">Back to top⬆️</a>)</p>
 
-
-
+## 🔗Design Links
+1. https://www.figma.com/design/7WFQvDENPrc7fYdeOmx3yV/Login-Register?node-id=1669-162202&m=dev&t=APzuRtzGaWhOuRw9-1
