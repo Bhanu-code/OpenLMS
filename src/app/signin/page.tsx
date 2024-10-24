@@ -23,7 +23,7 @@ export default function SignIn() {
           <div className="text-center">
             <h2 className="text-3xl font-bold">Sign in</h2>
             <p className="mt-2 text-sm text-gray-600">
-              If you don't have an account register
+              If you don&apos;t have an account register
               <Link href="/register" className="text-red-500 hover:underline ml-1">
                 You can Register here !
               </Link>

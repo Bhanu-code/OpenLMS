@@ -2,8 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-import { Checkbox } from "@/components/ui/checkbox"
-import { Facebook, Apple } from 'lucide-react'
+// import { Checkbox } from "@/components/ui/checkbox"
+// import { Facebook, Apple } from 'lucide-react'
 import bgImage from '@/public/bg.jpg'
 
 export default function Register() {
