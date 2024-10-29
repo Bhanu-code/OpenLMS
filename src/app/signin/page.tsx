@@ -1,10 +1,11 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
-import { Checkbox } from "@/components/ui/checkbox"
-import { Facebook, Apple } from 'lucide-react'
-import bgImage from '@/public/bg.jpg'
+import Image from "next/image";
+import Link from "next/link";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Facebook, Apple } from "lucide-react";
+import bgImage from "@/public/bg.jpg";
+import { signIn } from "@/auth";
 
 export default function SignIn() {
   return (
@@ -24,7 +25,10 @@ export default function SignIn() {
             <h2 className="text-3xl font-bold">Sign in</h2>
             <p className="mt-2 text-sm text-gray-600">
               If you don&apos;t have an account register
-              <Link href="/register" className="text-red-500 hover:underline ml-1">
+              <Link
+                href="/register"
+                className="text-red-500 hover:underline ml-1"
+              >
                 You can Register here !
               </Link>
             </p>
@@ -32,7 +36,10 @@ export default function SignIn() {
           <form className="mt-8 space-y-6">
             <div className="space-y-4">
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Email
                 </label>
                 <Input
@@ -46,7 +53,10 @@ export default function SignIn() {
                 />
               </div>
               <div>
-                <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="password"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Password
                 </label>
                 <Input
@@ -64,46 +74,79 @@ export default function SignIn() {
             <div className="flex items-center justify-between">
               <div className="flex items-center">
                 <Checkbox id="remember-me" />
-                <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900">
+                <label
+                  htmlFor="remember-me"
+                  className="ml-2 block text-sm text-gray-900"
+                >
                   Remember me
                 </label>
               </div>
               <div className="text-sm">
-                <Link href="/forgot-password" className="text-blue-600 hover:underline">
+                <Link
+                  href="/forgot-password"
+                  className="text-blue-600 hover:underline"
+                >
                   Forgot Password?
                 </Link>
               </div>
             </div>
 
-            <Button type="submit" className="w-full bg-red-500 hover:bg-red-600">
+            <Button
+              type="submit"
+              className="w-full bg-red-500 hover:bg-red-600"
+            >
               Login
             </Button>
-
-            <div className="mt-6">
-              <div className="relative">
-                <div className="absolute inset-0 flex items-center">
-                  <div className="w-full border-t border-gray-300" />
-                </div>
-                <div className="relative flex justify-center text-sm">
-                  <span className="px-2 bg-[#FFFfff] text-gray-500">or continue with</span>
-                </div>
+          </form>
+          <div className="mt-6">
+            <div className="relative">
+              <div className="absolute inset-0 flex items-center">
+                <div className="w-full border-t border-gray-300" />
               </div>
+              <div className="relative flex justify-center text-sm">
+                <span className="px-2 bg-[#FFFfff] text-gray-500">
+                  or continue with
+                </span>
+              </div>
+            </div>
 
-              <div className="mt-6 grid grid-cols-3 gap-3">
+            <div className="mt-6 grid grid-cols-3 gap-3">
+              <form
+                action={async () => {
+                  "use server";
+                  //at first, sign in with facebook & then redirect to the homepage after login
+                  await signIn("facebook", { redirectTo: "/" });
+                }}
+              >
                 <Button variant="outline" className="w-full">
                   <Facebook className="w-5 h-5 text-blue-600" />
                 </Button>
+              </form>
+
+              <Button variant="outline" className="w-full">
+                <Apple className="w-5 h-5" />
+              </Button>
+
+              <form
+                action={async () => {
+                  "use server";
+                  //at first, sign in with google & then redirect to the homepage after login
+                  await signIn("google", { redirectTo: "/" });
+                }}
+              >
                 <Button variant="outline" className="w-full">
-                  <Apple className="w-5 h-5" />
+                  <Image
+                    src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                    alt="Google"
+                    width={20}
+                    height={20}
+                  />
                 </Button>
-                <Button variant="outline" className="w-full">
-                  <Image src="/placeholder.svg?height=20&width=20" alt="Google" width={20} height={20} />
-                </Button>
-              </div>
+              </form>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -2,8 +2,20 @@ import AnimatedGradientText from "@/components/ui/animated-gradient-text";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ChevronRight } from "lucide-react";
+//uncomment these imports to perform 1. & 2.
+//import { auth } from "@/auth";
+//import { redirect } from "next/navigation";
 
-export default function Home() {
+export default async function Home() {
+//uncomment these lines to :
+// 1. get the user session
+// const session = await auth();
+// 2. Redirect to the login page and don't let the user access homepage if not already logged in
+//  if(!session)
+//  {
+//    redirect("/signin");
+//  }
+ 
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="flex items-center justify-center w-full min-h-[calc(100vh-64px)]">
