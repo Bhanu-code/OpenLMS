@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ChevronRight } from "lucide-react";
 //uncomment these imports to perform 1. & 2.
-//import { auth } from "@/auth";
+// import { auth } from "@/lib/auth";
 //import { redirect } from "next/navigation";
 
 export default async function Home() {

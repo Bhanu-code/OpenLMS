@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Facebook, Apple } from "lucide-react";
 import bgImage from "@/public/bg.jpg";
-import { signIn } from "@/auth";
+import { signIn } from "@/lib/auth";
 
 export default function SignIn() {
   return (
