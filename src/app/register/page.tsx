@@ -24,7 +24,7 @@ export default function Register() {
           <h2 className="text-3xl font-bold mb-6">Sign up</h2>
           <p className="mb-6 text-gray-600">
             If you already have an account register{" "}
-            <Link href="/login" className="text-red-500 hover:underline">
+            <Link href="/signin" className="text-red-500 hover:underline">
               Login here !
             </Link>
           </p>
